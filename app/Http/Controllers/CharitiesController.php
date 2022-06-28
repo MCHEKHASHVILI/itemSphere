@@ -2,12 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Category;
 use Illuminate\Http\Request;
-use App\Http\Requests\Cagetories\CategoryStoreRequest;
-use App\Http\Requests\Cagetories\CategoryUpdateRequest;
 
-class CategoriesController extends Controller
+class CharitiesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +13,7 @@ class CategoriesController extends Controller
      */
     public function index()
     {
-        // view()
-        return "views.categories.index";
+        //
     }
 
     /**
@@ -27,8 +23,7 @@ class CategoriesController extends Controller
      */
     public function create()
     {
-        // view()
-        return "views.categories.create";
+        //
     }
 
     /**
@@ -37,11 +32,9 @@ class CategoriesController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(CategoryStoreRequest $request)
+    public function store(Request $request)
     {
-        $category = Category::create($request->validated());
-        // with status
-        return back();
+        //
     }
 
     /**
@@ -50,10 +43,9 @@ class CategoriesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Category $category)
+    public function show($id)
     {
-        // view()
-        return "views.categories.show";
+        //
     }
 
     /**
@@ -62,10 +54,9 @@ class CategoriesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Category $category)
+    public function edit($id)
     {
-        // view()
-        return "views.categories.edit";
+        //
     }
 
     /**
@@ -75,11 +66,9 @@ class CategoriesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(CategoryUpdateRequest $request, Category $category)
+    public function update(Request $request, $id)
     {
-        $category->fill($request->validated());
-        $category->save();
-        return $category;
+        //
     }
 
     /**
@@ -88,8 +77,8 @@ class CategoriesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Category $category)
+    public function destroy($id)
     {
-        return $category->delete();
+        //
     }
 }
