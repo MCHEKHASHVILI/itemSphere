@@ -40,7 +40,7 @@ class ProductsController extends Controller
     public function store(ProductStoreRequest $request)
     {
         $product = Product::create($request->validated());
-        // Return redirect
+        // return redirect
         return $product;
     }
 
@@ -52,7 +52,7 @@ class ProductsController extends Controller
      */
     public function show(Product $product)
     {
-        // view()
+        // view() with $product
         return "views.products.show";
     }
 
@@ -64,7 +64,7 @@ class ProductsController extends Controller
      */
     public function edit(Product $product)
     {
-        // view()
+        // view() with $product
         return "views.products.edit";
     }
 
@@ -79,7 +79,7 @@ class ProductsController extends Controller
     {
         $product->fill($request->validated());
         $product->save();
-        // Return redirect
+        // return redirect
         return $product;
     }
 

@@ -1,7 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PagesController;
+use App\Http\Controllers\PostsController;
+use App\Http\Controllers\StoresController;
+use App\Http\Controllers\SocialsController;
 use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\CharitiesController;
 use App\Http\Controllers\CategoriesController;
 
 /*
@@ -25,3 +30,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::resource("categories", CategoriesController::class);
 Route::resource("products", ProductsController::class);
+Route::resource("charities", CharitiesController::class);
+Route::resource("pages", PagesController::class);
+Route::resource("posts", PostsController::class);
+Route::resource("socials", SocialsController::class);
+Route::resource("stores", StoresController::class);

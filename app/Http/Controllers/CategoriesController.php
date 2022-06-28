@@ -40,8 +40,8 @@ class CategoriesController extends Controller
     public function store(CategoryStoreRequest $request)
     {
         $category = Category::create($request->validated());
-        // with status
-        return back();
+        // return redirect
+        return $category();
     }
 
     /**
@@ -52,7 +52,7 @@ class CategoriesController extends Controller
      */
     public function show(Category $category)
     {
-        // view()
+        // view() with $category
         return "views.categories.show";
     }
 
@@ -64,7 +64,7 @@ class CategoriesController extends Controller
      */
     public function edit(Category $category)
     {
-        // view()
+        // view() with $category
         return "views.categories.edit";
     }
 
@@ -79,6 +79,7 @@ class CategoriesController extends Controller
     {
         $category->fill($request->validated());
         $category->save();
+        // return redirect
         return $category;
     }
 

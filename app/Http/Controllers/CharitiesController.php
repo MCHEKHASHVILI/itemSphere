@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Charity;
 use Illuminate\Http\Request;
+use App\Http\Requests\Charities\CharityStoreRequest;
+use App\Http\Requests\Charities\CharityUpdateRequest;
 
 class CharitiesController extends Controller
 {
@@ -13,7 +16,8 @@ class CharitiesController extends Controller
      */
     public function index()
     {
-        //
+        // view()
+        return "views.charities.index";
     }
 
     /**
@@ -23,7 +27,8 @@ class CharitiesController extends Controller
      */
     public function create()
     {
-        //
+        // view()
+        return "views.charities.create";
     }
 
     /**
@@ -32,9 +37,11 @@ class CharitiesController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CharityStoreRequest $request)
     {
-        //
+        $charity = Charity::create($request->validated());
+        // redirect with success
+        return $charity;
     }
 
     /**
@@ -43,9 +50,10 @@ class CharitiesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Charity $charity)
     {
-        //
+        // view() with $charity
+        return "views.charities.show";
     }
 
     /**
@@ -56,7 +64,8 @@ class CharitiesController extends Controller
      */
     public function edit($id)
     {
-        //
+        // view()
+        return "views.charities.edit";
     }
 
     /**
@@ -66,9 +75,12 @@ class CharitiesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(CharityUpdateRequest $request, Charity $charity)
     {
-        //
+        $charity->fill($request->validated());
+        $charity->save();
+        // return redirect
+        return $charity;
     }
 
     /**
@@ -77,8 +89,8 @@ class CharitiesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Charity $charity)
     {
-        //
+        return $charity->delete();
     }
 }

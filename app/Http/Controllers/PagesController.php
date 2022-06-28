@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Page;
 use Illuminate\Http\Request;
+use App\Http\Requests\Pages\PageStoreRequest;
+use App\Http\Requests\Pages\PageUpdateRequest;
 
 class PagesController extends Controller
 {
@@ -13,7 +16,8 @@ class PagesController extends Controller
      */
     public function index()
     {
-        //
+        // view()
+        return "views.pages.index";
     }
 
     /**
@@ -23,7 +27,8 @@ class PagesController extends Controller
      */
     public function create()
     {
-        //
+        // view()
+        return "views.pages.create";
     }
 
     /**
@@ -32,9 +37,11 @@ class PagesController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(PageStoreRequest $request)
     {
-        //
+        $page = Page::create($request->validated());
+        // return redirect
+        return $page;
     }
 
     /**
@@ -43,9 +50,10 @@ class PagesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Page $page)
     {
-        //
+        // view() with $page
+        return "views.pages.index";
     }
 
     /**
@@ -54,9 +62,10 @@ class PagesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Page $page)
     {
-        //
+        // view() with $page
+        return "views.pages.edit";
     }
 
     /**
@@ -66,9 +75,12 @@ class PagesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(PageUpdateRequest $request, Page $page)
     {
-        //
+        $page->fill($request->validated());
+        $page->save();
+        // return redirect
+        return $page;
     }
 
     /**
@@ -77,8 +89,8 @@ class PagesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Page $page)
     {
-        //
+        return $page->delete();
     }
 }

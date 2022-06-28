@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Social;
 use Illuminate\Http\Request;
+use App\Http\Requests\Socials\SocialStoreRequest;
+use App\Http\Requests\Socials\SocialUpdateRequest;
 
 class SocialsController extends Controller
 {
@@ -13,7 +16,8 @@ class SocialsController extends Controller
      */
     public function index()
     {
-        //
+        // view()
+        return "views.socials.index";
     }
 
     /**
@@ -23,7 +27,8 @@ class SocialsController extends Controller
      */
     public function create()
     {
-        //
+        // view()
+        return "views.socials.create";
     }
 
     /**
@@ -32,9 +37,11 @@ class SocialsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(SocialStoreRequest $request)
     {
-        //
+        $social = Social::create($request->validated());
+        // return redirect
+        return $social;        
     }
 
     /**
@@ -43,9 +50,10 @@ class SocialsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Social $social)
     {
-        //
+        // view() with $social
+        return "views.socials.show";
     }
 
     /**
@@ -54,9 +62,10 @@ class SocialsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Social $social)
     {
-        //
+        // view() with $social
+        return "views.socials.index";
     }
 
     /**
@@ -66,9 +75,12 @@ class SocialsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(SocialUpdateRequest $request, Social $social)
     {
-        //
+        $social->fill($request->validated());
+        $social->save();
+        // return redirect
+        return $social;
     }
 
     /**
@@ -77,8 +89,8 @@ class SocialsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Social $social)
     {
-        //
+        return $social->delete();
     }
 }

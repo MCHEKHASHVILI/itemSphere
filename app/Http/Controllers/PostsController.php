@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Post;
 use Illuminate\Http\Request;
+use App\Http\Requests\Posts\PostStoreRequest;
+use App\Http\Requests\Posts\PostUpdateRequest;
 
 class PostsController extends Controller
 {
@@ -13,7 +16,8 @@ class PostsController extends Controller
      */
     public function index()
     {
-        //
+        // view()
+        return "views.posts.index";
     }
 
     /**
@@ -23,7 +27,8 @@ class PostsController extends Controller
      */
     public function create()
     {
-        //
+        // view()
+        return "views.posts.create";
     }
 
     /**
@@ -32,9 +37,11 @@ class PostsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(PostStoreRequest $request)
     {
-        //
+        $post = Post::create($request->validated());
+        // return redirect
+        return $post;
     }
 
     /**
@@ -45,7 +52,8 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-        //
+        // view() with $post
+        return "views.posts.show";
     }
 
     /**
@@ -54,9 +62,10 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Post $post)
     {
-        //
+        // view() with $post
+        return "views.posts.edit";
     }
 
     /**
@@ -66,9 +75,12 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(PostUpdateRequest $request, Post $post)
     {
-        //
+        $post->fill($request->validated());
+        $post->save();
+        // return redirect
+        return $post;
     }
 
     /**
@@ -77,8 +89,8 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Post $post)
     {
-        //
+        return $post->delete();
     }
 }
