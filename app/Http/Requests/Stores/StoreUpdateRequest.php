@@ -24,7 +24,10 @@ class StoreUpdateRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name' => "required|string",
+            'user_id' => "numeric",
+            'phone' => "numeric",
+            'email' => "email",
         ];
     }
 }

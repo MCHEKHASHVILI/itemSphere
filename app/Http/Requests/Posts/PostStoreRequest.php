@@ -24,7 +24,10 @@ class PostStoreRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'title' => "string",
+            'body' => "string",
+            'user_id' => "numeric",
+            'slug' => "string",
         ];
     }
 }

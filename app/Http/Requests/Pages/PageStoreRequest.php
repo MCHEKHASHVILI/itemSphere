@@ -24,7 +24,8 @@ class PageStoreRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'title' => "string",
+            'slug' => "string",
         ];
     }
 }

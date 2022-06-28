@@ -24,7 +24,9 @@ class SocialStoreRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'title' => "required|string",
+            'description' => "string",
+            'user_id' => "numeric",
         ];
     }
 }

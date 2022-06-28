@@ -24,7 +24,11 @@ class CharityUpdateRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'title' => "string",
+            'description' => "string",
+            'budget' => "numeric",
+            'social_id' => "numeric",
+            'status' => "string",
         ];
     }
 }
