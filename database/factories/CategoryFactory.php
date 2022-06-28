@@ -4,16 +4,16 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
-use App\Models\User;
+use App\Models\Category;
 
-class UserFactory extends Factory
+class CategoryFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = User::class;
+    protected $model = Category::class;
 
     /**
      * Define the model's default state.
@@ -24,15 +24,9 @@ class UserFactory extends Factory
     {
         return [
             'name' => $this->faker->name,
-            'surname' => $this->faker->word,
-            'email' => $this->faker->safeEmail,
-            'phone' => $this->faker->phoneNumber,
-            'password' => $this->faker->password,
+            'parent_id' => $this->faker->numberBetween(-10000, 10000),
             'created_at' => $this->faker->dateTime(),
-            'updated' => $this->faker->dateTime(),
-            'email_verified_at' => $this->faker->word,
-            'remember_token' => $this->faker->word,
-            'role' => "market",
+            'updated_at' => $this->faker->dateTime(),
         ];
     }
 }

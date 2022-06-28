@@ -1,0 +1,46 @@
+created:
+    - database/factories/UserFactory.php
+    - database/factories/ProductFactory.php
+    - database/factories/CategoryFactory.php
+    - database/factories/PostFactory.php
+    - database/factories/RoleFactory.php
+    - database/factories/PageFactory.php
+    - database/factories/StoreFactory.php
+    - database/factories/CharityFactory.php
+    - database/factories/ProductsStoreFactory.php
+    - database/factories/PagePostFactory.php
+    - database/factories/SocialFactory.php
+    - database/migrations/2022_06_28_123534_create_users_table.php
+    - database/migrations/2022_06_28_123535_create_products_table.php
+    - database/migrations/2022_06_28_123536_create_categories_table.php
+    - database/migrations/2022_06_28_123537_create_posts_table.php
+    - database/migrations/2022_06_28_123538_create_roles_table.php
+    - database/migrations/2022_06_28_123539_create_pages_table.php
+    - database/migrations/2022_06_28_123540_create_stores_table.php
+    - database/migrations/2022_06_28_123541_create_charities_table.php
+    - database/migrations/2022_06_28_123542_create_products_stores_table.php
+    - database/migrations/2022_06_28_123543_create_page_posts_table.php
+    - database/migrations/2022_06_28_123544_create_socials_table.php
+    - app/Models/User.php
+    - app/Models/Product.php
+    - app/Models/Category.php
+    - app/Models/Post.php
+    - app/Models/Role.php
+    - app/Models/Page.php
+    - app/Models/Store.php
+    - app/Models/Charity.php
+    - app/Models/ProductsStore.php
+    - app/Models/PagePost.php
+    - app/Models/Social.php
+models:
+    User: { id: bigIncrements, name: string, surname: string, email: 'string unique', phone: 'string nullable', password: string, created_at: 'timestamp nullable', updated: 'timestamp nullable', email_verified_at: 'string nullable', remember_token: 'string nullable', role_id: integer }
+    Product: { id: bigIncrements, name: string, category_id: 'bigInteger unsigned', description: 'json nullable' }
+    Category: { id: increments, name: string, parent_id: 'integer nullable', created_at: timestamp, updated_at: timestamp }
+    Post: { id: bigIncrements, title: string, body: text, user_id: 'bigInteger unsigned', created_at: timestamp, updated_at: timestamp, slug: 'string unique' }
+    Role: { id: increments, name: 'string unique' }
+    Page: { id: bigIncrements, title: string, slug: 'string unique' }
+    Store: { id: increments, name: integer, user_id: integer, phone: 'string nullable', email: 'bigInteger unsigned' }
+    Charity: { id: bigIncrements, title: string, description: 'text nullable', budget: double, social_id: 'bigInteger unsigned', status: string }
+    ProductsStore: { id: bigIncrements, product_id: 'bigInteger unsigned', store_id: 'bigInteger unsigned', quantity: 'bigInteger unsigned', price: double, status: string, indexes: [{ unique: 'store_id, product_id' }] }
+    PagePost: { id: bigIncrements, page_id: 'bigInteger unsigned', post_id: 'bigInteger unsigned', indexes: [{ unique: 'page_id, post_id' }] }
+    Social: { id: bigIncrements, title: string, description: string, user_id: 'bigInteger unsigned' }
