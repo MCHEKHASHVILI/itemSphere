@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "61b712adcd6a586375a2d6533c01b2f1",
+    "content-hash": "78e5f21ad5875c26e919e2a24bd8fbfb",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1400,6 +1400,74 @@
                 "source": "https://github.com/laravel/serializable-closure"
             },
             "time": "2022-05-16T17:09:47+00:00"
+        },
+        {
+            "name": "laravel/telescope",
+            "version": "v4.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/telescope.git",
+                "reference": "d0cf8d6a54a1831dbe189a1f194e8271a4a5435a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/telescope/zipball/d0cf8d6a54a1831dbe189a1f194e8271a4a5435a",
+                "reference": "d0cf8d6a54a1831dbe189a1f194e8271a4a5435a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "laravel/framework": "^8.37|^9.0",
+                "php": "^7.3|^8.0",
+                "symfony/var-dumper": "^5.0|^6.0"
+            },
+            "require-dev": {
+                "ext-gd": "*",
+                "guzzlehttp/guzzle": "^6.0|^7.0",
+                "orchestra/testbench": "^6.0|^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Telescope\\TelescopeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Telescope\\": "src/",
+                    "Laravel\\Telescope\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                },
+                {
+                    "name": "Mohamed Said",
+                    "email": "mohamed@laravel.com"
+                }
+            ],
+            "description": "An elegant debug assistant for the Laravel framework.",
+            "keywords": [
+                "debugging",
+                "laravel",
+                "monitoring"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/telescope/issues",
+                "source": "https://github.com/laravel/telescope/tree/v4.9.0"
+            },
+            "time": "2022-04-19T15:48:51+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -3922,6 +3990,62 @@
                 }
             ],
             "time": "2022-03-11T08:16:01+00:00"
+        },
+        {
+            "name": "stichoza/nbg-currency",
+            "version": "v2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Stichoza/nbg-currency.git",
+                "reference": "b6e4823303d1f03c0553ea2d3e2c62750b3e02e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Stichoza/nbg-currency/zipball/b6e4823303d1f03c0553ea2d3e2c62750b3e02e0",
+                "reference": "b6e4823303d1f03c0553ea2d3e2c62750b3e02e0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "nesbot/carbon": "^2.32.0",
+                "php": ">=7.1.8"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Stichoza\\NbgCurrency\\": "src/"
+                },
+                "psr-4": {
+                    "Stichoza\\NbgCurrency\\": "src/Stichoza/NbgCurrency/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Levan Velijanashvili",
+                    "email": "me@stichoza.com"
+                }
+            ],
+            "description": "National Bank of Georgia (NBG) currency service API wrapper",
+            "homepage": "http://github.com/Stichoza/nbg-currency",
+            "keywords": [
+                "Bank",
+                "Rate",
+                "currency",
+                "georgia",
+                "nbg"
+            ],
+            "support": {
+                "issues": "https://github.com/Stichoza/nbg-currency/issues",
+                "source": "https://github.com/Stichoza/nbg-currency/tree/v2.0.2"
+            },
+            "time": "2021-09-08T09:10:02+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

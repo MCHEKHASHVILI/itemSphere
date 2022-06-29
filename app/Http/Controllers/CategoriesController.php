@@ -41,7 +41,7 @@ class CategoriesController extends Controller
     {
         $category = Category::create($request->validated());
         // return redirect
-        return $category();
+        return $category;
     }
 
     /**
