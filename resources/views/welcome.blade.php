@@ -184,22 +184,22 @@
                         <div class="main-slider d-flex align-items-center">
                             <div class="splide__arrows main-slider__navs d-none d-lg-flex">
                                 <button class="splide__arrow splide__arrow--prev main-slider__navs--btn main-slider__navs--prev">
-                                    <img src="img/svg/slider-prev.svg" alt="">
+                                    <img src="{{ asset('assets/img/svg/slider-prev.svg') }}" alt="">
                                 </button>
                                 <button class="splide__arrow splide__arrow--next main-slider__navs--btn main-slider__navs--next">
-                                    <img src="img/svg/slider-next.svg" alt="">
+                                    <img src="{{ asset('assets/img/svg/slider-next.svg') }}" alt="">
                                 </button>
                             </div>
                             <div class="splide__track">
                                 <ul class="splide__list">
                                     <div class="splide__slide">
                                         <div class="main-slider__item">
-                                            <img src="img/slider-banner.png" alt="">
+                                            <img src="{{ asset('assets/img/slider-banner.png') }}" alt="">
                                         </div>
                                     </div>
                                     <div class="splide__slide">
                                         <div class="main-slider__item">
-                                            <img src="img/slider-banner.png" alt="">
+                                            <img src="{{ asset('assets/img/slider-banner.png') }}" alt="">
                                         </div>
                                     </div>
                                 </ul>
@@ -209,25 +209,25 @@
                     <!-- banner -->
                     <div class="col-3 d-none d-lg-block">
                         <div class="banner__mini banner">
-                            <img src="img/mini-banner1.png" alt="">
+                            <img src="{{ asset('assets/img/mini-banner1.png') }}" alt="">
                         </div>
                     </div>
                     <!-- banner -->
                     <div class="col-3 d-none d-lg-block">
                         <div class="banner__mini banner">
-                            <img src="img/mini-banner2.png" alt="">
+                            <img src="{{ asset('assets/img/mini-banner2.png') }}" alt="">
                         </div>
                     </div>
                     <!-- banner -->
                     <div class="col-3 d-none d-lg-block">
                         <div class="banner__mini banner">
-                            <img src="img/mini-banner3.png" alt="">
+                            <img src="{{ asset('assets/img/mini-banner3.png') }}" alt="">
                         </div>
                     </div>
                     <!-- banner -->
                     <div class="col-3 d-none d-lg-block">
                         <div class="banner__mini banner">
-                            <img src="img/mini-banner3.png" alt="">
+                            <img src="{{ asset('assets/img/mini-banner3.png') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -240,10 +240,10 @@
         <div class="products-slider">
             <div class="splide__arrows products-slider__navs d-none d-lg-flex">
                 <button class="splide__arrow splide__arrow--prev products-slider__navs--btn products-slider__navs--prev">
-                    <img src="img/svg/slider-prev.svg" alt="">
+                    <img src="{{ asset('assets/img/svg/slider-prev.svg') }}" alt="">
                 </button>
                 <button class="splide__arrow splide__arrow--next products-slider__navs--btn products-slider__navs--next">
-                    <img src="img/svg/slider-next.svg" alt="">
+                    <img src="{{ asset('assets/img/svg/slider-next.svg') }}" alt="">
                 </button>
             </div>
             <div class="products__section d-flex align-items-center justify-content-center justify-content-lg-between">
@@ -257,27 +257,29 @@
                 <ul class="splide__list">
                     <div class="splide__slide">
                         <div class="products-slider__item">
-                            <button class="products-slider__item--fav"><img src="img/svg/product-fav.svg" alt=""></button>
+                            <button class="products-slider__item--fav">
+                                <img src="{{ asset('assets/img/svg/product-fav.svg') }}" alt="">
+                            </button>
                             <!-- item slider -->
                             <div class="item-slider">
                                 <div class="splide__arrows item-slider__navs">
                                     <button class="splide__arrow splide__arrow--prev item-slider__navs--btn item-slider__navs--prev">
-                                        <img src="img/svg/item-prev.svg" alt="">
+                                        <img src="{{ asset('assets/img/svg/item-prev.svg') }}" alt="">
                                     </button>
                                     <button class="splide__arrow splide__arrow--next item-slider__navs--btn item-slider__navs--next">
-                                        <img src="img/svg/item-next.svg" alt="">
+                                        <img src="{{ asset('assets/img/svg/item-next.svg') }}" alt="">
                                     </button>
                                 </div>
                                 <div class="splide__track">
                                     <ul class="splide__list">
                                         <div class="splide__slide">
                                             <div class="item-slider__item">
-                                                <img src="img/watch.png" alt="">
+                                                <img src="{{ asset('assets/img/watch.png') }}" alt="">
                                             </div>
                                         </div>
                                         <div class="splide__slide">
                                             <div class="item-slider__item">
-                                                <img src="img/headphone.png" alt="">
+                                                <img src="{{ asset('assets/img/headphone.png') }}" alt="">
                                             </div>
                                         </div>
                                     </ul>
@@ -306,27 +308,29 @@
                     </div><!-- item end -->
                     <div class="splide__slide">
                         <div class="products-slider__item">
-                            <button class="products-slider__item--fav"><img src="img/svg/product-fav.svg" alt=""></button>
+                            <button class="products-slider__item--fav">
+                                <img src="{{ asset('assets/img/svg/product-fav.svg') }}" alt="">
+                            </button>
                             <!-- item slider -->
                             <div class="item-slider">
                                 <div class="splide__arrows item-slider__navs">
                                     <button class="splide__arrow splide__arrow--prev item-slider__navs--btn item-slider__navs--prev">
-                                        <img src="img/svg/item-prev.svg" alt="">
+                                        <img src="{{ asset('assets/img/svg/item-prev.svg') }}" alt="">
                                     </button>
                                     <button class="splide__arrow splide__arrow--next item-slider__navs--btn item-slider__navs--next">
-                                        <img src="img/svg/item-next.svg" alt="">
+                                        <img src="{{ asset('assets/img/svg/item-next.svg') }}" alt="">
                                     </button>
                                 </div>
                                 <div class="splide__track">
                                     <ul class="splide__list">
                                         <div class="splide__slide">
                                             <div class="item-slider__item">
-                                                <img src="img/watch.png" alt="">
+                                                <img src="{{ asset('assets/img/watch.png') }}" alt="">
                                             </div>
                                         </div>
                                         <div class="splide__slide">
                                             <div class="item-slider__item">
-                                                <img src="img/headphone.png" alt="">
+                                                <img src="{{ asset('assets/img/headphone.png') }}" alt="">
                                             </div>
                                         </div>
                                     </ul>
@@ -355,27 +359,29 @@
                     </div><!-- item end -->
                     <div class="splide__slide">
                         <div class="products-slider__item">
-                            <button class="products-slider__item--fav"><img src="img/svg/product-fav.svg" alt=""></button>
+                            <button class="products-slider__item--fav">
+                                <img src="{{ asset('assets/img/svg/product-fav.svg') }}" alt="">
+                            </button>
                             <!-- item slider -->
                             <div class="item-slider">
                                 <div class="splide__arrows item-slider__navs">
                                     <button class="splide__arrow splide__arrow--prev item-slider__navs--btn item-slider__navs--prev">
-                                        <img src="img/svg/item-prev.svg" alt="">
+                                        <img src="{{ asset('assets/img/svg/item-prev.svg') }}" alt="">
                                     </button>
                                     <button class="splide__arrow splide__arrow--next item-slider__navs--btn item-slider__navs--next">
-                                        <img src="img/svg/item-next.svg" alt="">
+                                        <img src="{{ asset('assets/img/svg/item-next.svg') }}" alt="">
                                     </button>
                                 </div>
                                 <div class="splide__track">
                                     <ul class="splide__list">
                                         <div class="splide__slide">
                                             <div class="item-slider__item">
-                                                <img src="img/watch.png" alt="">
+                                                <img src="{{ asset('assets/img/watch.png') }}" alt="">
                                             </div>
                                         </div>
                                         <div class="splide__slide">
                                             <div class="item-slider__item">
-                                                <img src="img/headphone.png" alt="">
+                                                <img src="{{ asset('assets/img/headphone.png') }}" alt="">
                                             </div>
                                         </div>
                                     </ul>
@@ -404,27 +410,29 @@
                     </div><!-- item end -->
                     <div class="splide__slide">
                         <div class="products-slider__item">
-                            <button class="products-slider__item--fav"><img src="img/svg/product-fav.svg" alt=""></button>
+                            <button class="products-slider__item--fav">
+                                <img src="{{ asset('assets/img/svg/product-fav.svg') }}" alt="">
+                            </button>
                             <!-- item slider -->
                             <div class="item-slider">
                                 <div class="splide__arrows item-slider__navs">
                                     <button class="splide__arrow splide__arrow--prev item-slider__navs--btn item-slider__navs--prev">
-                                        <img src="img/svg/item-prev.svg" alt="">
+                                        <img src="{{ asset('assets/img/svg/item-prev.svg') }}" alt="">
                                     </button>
                                     <button class="splide__arrow splide__arrow--next item-slider__navs--btn item-slider__navs--next">
-                                        <img src="img/svg/item-next.svg" alt="">
+                                        <img src="{{ asset('assets/img/svg/item-next.svg') }}" alt="">
                                     </button>
                                 </div>
                                 <div class="splide__track">
                                     <ul class="splide__list">
                                         <div class="splide__slide">
                                             <div class="item-slider__item">
-                                                <img src="img/watch.png" alt="">
+                                                <img src="{{ asset('assets/img/watch.png') }}" alt="">
                                             </div>
                                         </div>
                                         <div class="splide__slide">
                                             <div class="item-slider__item">
-                                                <img src="img/headphone.png" alt="">
+                                                <img src="{{ asset('assets/img/headphone.png') }}" alt="">
                                             </div>
                                         </div>
                                     </ul>
@@ -434,8 +442,8 @@
                                 <div class="products-slider__item--status regular">
                                     NEW
                                 </div>
-                                <div class="products-slider__item--price products-slider__item--price--free bold">
-                                    FREE
+                                <div class="products-slider__item--price bold">
+                                    ₾1,239.39
                                 </div>
                                 <a href="" class="products-slider__item--name regular">
                                     TCL 40S325 40 Inch 1080p Smart LED Roku TV
@@ -453,27 +461,29 @@
                     </div><!-- item end -->
                     <div class="splide__slide">
                         <div class="products-slider__item">
-                            <button class="products-slider__item--fav"><img src="img/svg/product-fav.svg" alt=""></button>
+                            <button class="products-slider__item--fav">
+                                <img src="{{ asset('assets/img/svg/product-fav.svg') }}" alt="">
+                            </button>
                             <!-- item slider -->
                             <div class="item-slider">
                                 <div class="splide__arrows item-slider__navs">
                                     <button class="splide__arrow splide__arrow--prev item-slider__navs--btn item-slider__navs--prev">
-                                        <img src="img/svg/item-prev.svg" alt="">
+                                        <img src="{{ asset('assets/img/svg/item-prev.svg') }}" alt="">
                                     </button>
                                     <button class="splide__arrow splide__arrow--next item-slider__navs--btn item-slider__navs--next">
-                                        <img src="img/svg/item-next.svg" alt="">
+                                        <img src="{{ asset('assets/img/svg/item-next.svg') }}" alt="">
                                     </button>
                                 </div>
                                 <div class="splide__track">
                                     <ul class="splide__list">
                                         <div class="splide__slide">
                                             <div class="item-slider__item">
-                                                <img src="img/watch.png" alt="">
+                                                <img src="{{ asset('assets/img/watch.png') }}" alt="">
                                             </div>
                                         </div>
                                         <div class="splide__slide">
                                             <div class="item-slider__item">
-                                                <img src="img/headphone.png" alt="">
+                                                <img src="{{ asset('assets/img/headphone.png') }}" alt="">
                                             </div>
                                         </div>
                                     </ul>
@@ -506,10 +516,12 @@
             <div class="row d-flex d-lg-none">
                 <div class="col-6">
                     <div class="products-slider__item">
-                        <button class="products-slider__item--fav"><img src="img/svg/product-fav.svg" alt=""></button>
+                        <button class="products-slider__item--fav">
+                            <img src="{{ asset('assets/img/svg/product-fav.svg') }}" alt="">
+                        </button>
                         <!-- item slider -->
                         <div class="item-slider__item">
-                            <img src="img/watch.png" alt="">
+                            <img src="{{ asset('assets/img/watch.png') }}" alt="">
                         </div>
                         <div class="products-slider__item--footer d-flex flex-column align-items-start">
                             <div class="products-slider__item--status regular">
@@ -534,10 +546,12 @@
                 </div>
                 <div class="col-6">
                     <div class="products-slider__item">
-                        <button class="products-slider__item--fav"><img src="img/svg/product-fav.svg" alt=""></button>
+                        <button class="products-slider__item--fav">
+                            <img src="{{ asset('assets/img/svg/product-fav.svg') }}" alt="">
+                        </button>
                         <!-- item slider -->
                         <div class="item-slider__item">
-                            <img src="img/watch.png" alt="">
+                            <img src="{{ asset('assets/img/watch.png') }}" alt="">
                         </div>
                         <div class="products-slider__item--footer d-flex flex-column align-items-start">
                             <div class="products-slider__item--status regular">
@@ -562,10 +576,12 @@
                 </div>
                 <div class="col-6">
                     <div class="products-slider__item">
-                        <button class="products-slider__item--fav"><img src="img/svg/product-fav.svg" alt=""></button>
+                        <button class="products-slider__item--fav">
+                            <img src="{{ asset('assets/img/svg/product-fav.svg') }}" alt="">
+                        </button>
                         <!-- item slider -->
                         <div class="item-slider__item">
-                            <img src="img/watch.png" alt="">
+                            <img src="{{ asset('assets/img/watch.png') }}" alt="">
                         </div>
                         <div class="products-slider__item--footer d-flex flex-column align-items-start">
                             <div class="products-slider__item--status regular">
@@ -590,10 +606,12 @@
                 </div>
                 <div class="col-6">
                     <div class="products-slider__item">
-                        <button class="products-slider__item--fav"><img src="img/svg/product-fav.svg" alt=""></button>
+                        <button class="products-slider__item--fav">
+                            <img src="{{ asset('assets/img/svg/product-fav.svg') }}" alt="">
+                        </button>
                         <!-- item slider -->
                         <div class="item-slider__item">
-                            <img src="img/watch.png" alt="">
+                            <img src="{{ asset('assets/img/watch.png') }}" alt="">
                         </div>
                         <div class="products-slider__item--footer d-flex flex-column align-items-start">
                             <div class="products-slider__item--status regular">
@@ -625,10 +643,10 @@
         <div class="products-slider">
             <div class="splide__arrows products-slider__navs d-none d-lg-flex">
                 <button class="splide__arrow splide__arrow--prev products-slider__navs--btn products-slider__navs--prev">
-                    <img src="img/svg/slider-prev.svg" alt="">
+                    <img src="{{ asset('assets/img/svg/slider-prev.svg') }}" alt="">
                 </button>
                 <button class="splide__arrow splide__arrow--next products-slider__navs--btn products-slider__navs--next">
-                    <img src="img/svg/slider-next.svg" alt="">
+                    <img src="{{ asset('assets/img/svg/slider-next.svg') }}" alt="">
                 </button>
             </div>
             <div class="products__section d-flex align-items-center justify-content-center justify-content-lg-between">
@@ -642,7 +660,7 @@
                 <ul class="splide__list">
                     <div class="splide__slide d-flex flex-column align-items-center">
                         <div class="hashtags__item d-flex align-items-center justify-content-center">
-                            <img src="img/watch.png" alt="" class="hashtags__item--cover">
+                            <img src="{{ asset('assets/img/watch.png') }}" alt="" class="hashtags__item--cover">
                         </div>
                         <h1 class="hashtags__item--title">
                             <a href="">Christmas & Winter</a>
@@ -650,7 +668,7 @@
                     </div><!-- item end -->
                     <div class="splide__slide d-flex flex-column align-items-center">
                         <div class="hashtags__item d-flex align-items-center justify-content-center">
-                            <img src="img/watch.png" alt="" class="hashtags__item--cover">
+                            <img src="{{ asset('assets/img/watch.png') }}" alt="" class="hashtags__item--cover">
                         </div>
                         <h1 class="hashtags__item--title">
                             <a href="">Christmas & Winter</a>
@@ -658,7 +676,7 @@
                     </div><!-- item end -->
                     <div class="splide__slide d-flex flex-column align-items-center">
                         <div class="hashtags__item d-flex align-items-center justify-content-center">
-                            <img src="img/watch.png" alt="" class="hashtags__item--cover">
+                            <img src="{{ asset('assets/img/watch.png') }}" alt="" class="hashtags__item--cover">
                         </div>
                         <h1 class="hashtags__item--title">
                             <a href="">Christmas & Winter</a>
@@ -666,7 +684,7 @@
                     </div><!-- item end -->
                     <div class="splide__slide d-flex flex-column align-items-center">
                         <div class="hashtags__item d-flex align-items-center justify-content-center">
-                            <img src="img/headphone.png" alt="" class="hashtags__item--cover">
+                            <img src="{{ asset('assets/img/headphone.png') }}" alt="" class="hashtags__item--cover">
                         </div>
                         <h1 class="hashtags__item--title">
                             <a href="">Christmas & Winter</a>
@@ -674,7 +692,7 @@
                     </div><!-- item end -->
                     <div class="splide__slide d-flex flex-column align-items-center">
                         <div class="hashtags__item d-flex align-items-center justify-content-center">
-                            <img src="img/watch.png" alt="" class="hashtags__item--cover">
+                            <img src="{{ asset('assets/img/watch.png') }}" alt="" class="hashtags__item--cover">
                         </div>
                         <h1 class="hashtags__item--title">
                             <a href="">Christmas & Winter</a>
@@ -682,7 +700,7 @@
                     </div><!-- item end -->
                     <div class="splide__slide d-flex flex-column align-items-center">
                         <div class="hashtags__item d-flex align-items-center justify-content-center">
-                            <img src="img/watch.png" alt="" class="hashtags__item--cover">
+                            <img src="{{ asset('assets/img/watch.png') }}" alt="" class="hashtags__item--cover">
                         </div>
                         <h1 class="hashtags__item--title">
                             <a href="">Christmas & Winter</a>
@@ -710,10 +728,10 @@
                     <div class="social-program-slider">
                         <div class="splide__arrows social-program-slider__navs d-none d-lg-flex">
                             <button class="splide__arrow splide__arrow--prev products-slider__navs--btn products-slider__navs--prev">
-                                <img src="img/svg/slider-prev.svg" alt="">
+                                <img src="{{ asset('assets/img/svg/slider-prev.svg') }}" alt="">
                             </button>
                             <button class="splide__arrow splide__arrow--next products-slider__navs--btn products-slider__navs--next">
-                                <img src="img/svg/slider-next.svg" alt="">
+                                <img src="{{ asset('assets/img/svg/slider-next.svg') }}" alt="">
                             </button>
                         </div>
                         <!-- slider -->
@@ -722,7 +740,7 @@
                                 <div class="splide__slide">
                                     <div class="social-program-slider__item">
                                         <figure class="social-program-slider__item--cover">
-                                            <img src="img/Product1.png" alt="">
+                                            <img src="{{ asset('assets/img/Product1.png') }}" alt="">
                                         </figure>
                                         <div class="social-program-slider__item--text">
                                             <h1 class="social-program-slider__item--title bold">Justice for Jake Blake</h1>
@@ -739,7 +757,7 @@
                                                 <ul class="d-flex align-items-center">
                                                     <li class="header__btns--item">
                                                         <a href="" class="header__btns--link d-flex align-items-center justify-content-center">
-                                                            <img src="img/svg/fav.svg" alt="">
+                                                            <img src="{{ asset('assets/img/svg/fav.svg') }}" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -750,7 +768,7 @@
                                 <div class="splide__slide">
                                     <div class="social-program-slider__item">
                                         <figure class="social-program-slider__item--cover">
-                                            <img src="img/Product1.png" alt="">
+                                            <img src="{{ asset('assets/img/Product1.png') }}" alt="">
                                         </figure>
                                         <div class="social-program-slider__item--text">
                                             <h1 class="social-program-slider__item--title bold">Justice for Jake Blake</h1>
@@ -767,7 +785,7 @@
                                                 <ul class="d-flex align-items-center">
                                                     <li class="header__btns--item">
                                                         <a href="" class="header__btns--link d-flex align-items-center justify-content-center">
-                                                            <img src="img/svg/fav.svg" alt="">
+                                                            <img src="{{ asset('assets/img/svg/fav.svg') }}" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -778,7 +796,7 @@
                                 <div class="splide__slide">
                                     <div class="social-program-slider__item">
                                         <figure class="social-program-slider__item--cover">
-                                            <img src="img/Product1.png" alt="">
+                                            <img src="{{ asset('assets/img/Product1.png') }}" alt="">
                                         </figure>
                                         <div class="social-program-slider__item--text">
                                             <h1 class="social-program-slider__item--title bold">Justice for Jake Blake</h1>
@@ -795,7 +813,7 @@
                                                 <ul class="d-flex align-items-center">
                                                     <li class="header__btns--item">
                                                         <a href="" class="header__btns--link d-flex align-items-center justify-content-center">
-                                                            <img src="img/svg/fav.svg" alt="">
+                                                            <img src="{{ asset('assets/img/svg/fav.svg') }}" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -806,7 +824,7 @@
                                 <div class="splide__slide">
                                     <div class="social-program-slider__item">
                                         <figure class="social-program-slider__item--cover">
-                                            <img src="img/Product1.png" alt="">
+                                            <img src="{{ asset('assets/img/Product1.png') }}" alt="">
                                         </figure>
                                         <div class="social-program-slider__item--text">
                                             <h1 class="social-program-slider__item--title bold">Justice for Jake Blake</h1>
@@ -823,7 +841,7 @@
                                                 <ul class="d-flex align-items-center">
                                                     <li class="header__btns--item">
                                                         <a href="" class="header__btns--link d-flex align-items-center justify-content-center">
-                                                            <img src="img/svg/fav.svg" alt="">
+                                                            <img src="{{ asset('assets/img/svg/fav.svg') }}" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -844,10 +862,10 @@
         <div class="products-slider">
             <div class="splide__arrows products-slider__navs d-none d-lg-flex">
                 <button class="splide__arrow splide__arrow--prev products-slider__navs--btn products-slider__navs--prev">
-                    <img src="img/svg/slider-prev.svg" alt="">
+                    <img src="{{ asset('assets/img/svg/slider-prev.svg') }}" alt="">
                 </button>
                 <button class="splide__arrow splide__arrow--next products-slider__navs--btn products-slider__navs--next">
-                    <img src="img/svg/slider-next.svg" alt="">
+                    <img src="{{ asset('assets/img/svg/slider-next.svg') }}" alt="">
                 </button>
             </div>
             <div class="products__section d-flex align-items-center justify-content-center justify-content-lg-between">
@@ -861,27 +879,29 @@
                 <ul class="splide__list">
                     <div class="splide__slide">
                         <div class="products-slider__item">
-                            <button class="products-slider__item--fav"><img src="img/svg/product-fav.svg" alt=""></button>
+                            <button class="products-slider__item--fav">
+                                <img src="{{ asset('assets/img/svg/product-fav.svg') }}" alt="">
+                            </button>
                             <!-- item slider -->
                             <div class="item-slider">
                                 <div class="splide__arrows item-slider__navs">
                                     <button class="splide__arrow splide__arrow--prev item-slider__navs--btn item-slider__navs--prev">
-                                        <img src="img/svg/item-prev.svg" alt="">
+                                        <img src="{{ asset('assets/img/svg/item-prev.svg') }}" alt="">
                                     </button>
                                     <button class="splide__arrow splide__arrow--next item-slider__navs--btn item-slider__navs--next">
-                                        <img src="img/svg/item-next.svg" alt="">
+                                        <img src="{{ asset('assets/img/svg/item-next.svg') }}" alt="">
                                     </button>
                                 </div>
                                 <div class="splide__track">
                                     <ul class="splide__list">
                                         <div class="splide__slide">
                                             <div class="item-slider__item">
-                                                <img src="img/watch.png" alt="">
+                                                <img src="{{ asset('assets/img/watch.png') }}" alt="">
                                             </div>
                                         </div>
                                         <div class="splide__slide">
                                             <div class="item-slider__item">
-                                                <img src="img/headphone.png" alt="">
+                                                <img src="{{ asset('assets/img/headphone.png') }}" alt="">
                                             </div>
                                         </div>
                                     </ul>
@@ -911,38 +931,41 @@
                     </div><!-- item end -->
                     <div class="splide__slide">
                         <div class="products-slider__item">
-                            <button class="products-slider__item--fav"><img src="img/svg/product-fav.svg" alt=""></button>
+                            <button class="products-slider__item--fav">
+                                <img src="{{ asset('assets/img/svg/product-fav.svg') }}" alt="">
+                            </button>
                             <!-- item slider -->
                             <div class="item-slider">
                                 <div class="splide__arrows item-slider__navs">
                                     <button class="splide__arrow splide__arrow--prev item-slider__navs--btn item-slider__navs--prev">
-                                        <img src="img/svg/item-prev.svg" alt="">
+                                        <img src="{{ asset('assets/img/svg/item-prev.svg') }}" alt="">
                                     </button>
                                     <button class="splide__arrow splide__arrow--next item-slider__navs--btn item-slider__navs--next">
-                                        <img src="img/svg/item-next.svg" alt="">
+                                        <img src="{{ asset('assets/img/svg/item-next.svg') }}" alt="">
                                     </button>
                                 </div>
                                 <div class="splide__track">
                                     <ul class="splide__list">
                                         <div class="splide__slide">
                                             <div class="item-slider__item">
-                                                <img src="img/watch.png" alt="">
+                                                <img src="{{ asset('assets/img/watch.png') }}" alt="">
                                             </div>
                                         </div>
                                         <div class="splide__slide">
                                             <div class="item-slider__item">
-                                                <img src="img/headphone.png" alt="">
+                                                <img src="{{ asset('assets/img/headphone.png') }}" alt="">
                                             </div>
                                         </div>
                                     </ul>
                                 </div>
                             </div><!-- item slide end -->
                             <div class="products-slider__item--footer d-flex flex-column align-items-start">
-                                <div class="products-slider__item--status regular">
+                                <div class="products-slider__item--status products-slider__item--status--green regular">
                                     NEW
                                 </div>
-                                <div class="products-slider__item--price bold">
+                                <div class="products-slider__item--price products-slider__item--price--red bold">
                                     ₾1,239.39
+                                    <span class="products-slider__item--price--old">₾1,239.39</span>
                                 </div>
                                 <a href="" class="products-slider__item--name regular">
                                     TCL 40S325 40 Inch 1080p Smart LED Roku TV
@@ -960,38 +983,41 @@
                     </div><!-- item end -->
                     <div class="splide__slide">
                         <div class="products-slider__item">
-                            <button class="products-slider__item--fav"><img src="img/svg/product-fav.svg" alt=""></button>
+                            <button class="products-slider__item--fav">
+                                <img src="{{ asset('assets/img/svg/product-fav.svg') }}" alt="">
+                            </button>
                             <!-- item slider -->
                             <div class="item-slider">
                                 <div class="splide__arrows item-slider__navs">
                                     <button class="splide__arrow splide__arrow--prev item-slider__navs--btn item-slider__navs--prev">
-                                        <img src="img/svg/item-prev.svg" alt="">
+                                        <img src="{{ asset('assets/img/svg/item-prev.svg') }}" alt="">
                                     </button>
                                     <button class="splide__arrow splide__arrow--next item-slider__navs--btn item-slider__navs--next">
-                                        <img src="img/svg/item-next.svg" alt="">
+                                        <img src="{{ asset('assets/img/svg/item-next.svg') }}" alt="">
                                     </button>
                                 </div>
                                 <div class="splide__track">
                                     <ul class="splide__list">
                                         <div class="splide__slide">
                                             <div class="item-slider__item">
-                                                <img src="img/watch.png" alt="">
+                                                <img src="{{ asset('assets/img/watch.png') }}" alt="">
                                             </div>
                                         </div>
                                         <div class="splide__slide">
                                             <div class="item-slider__item">
-                                                <img src="img/headphone.png" alt="">
+                                                <img src="{{ asset('assets/img/headphone.png') }}" alt="">
                                             </div>
                                         </div>
                                     </ul>
                                 </div>
                             </div><!-- item slide end -->
                             <div class="products-slider__item--footer d-flex flex-column align-items-start">
-                                <div class="products-slider__item--status regular">
+                                <div class="products-slider__item--status products-slider__item--status--green regular">
                                     NEW
                                 </div>
-                                <div class="products-slider__item--price bold">
+                                <div class="products-slider__item--price products-slider__item--price--red bold">
                                     ₾1,239.39
+                                    <span class="products-slider__item--price--old">₾1,239.39</span>
                                 </div>
                                 <a href="" class="products-slider__item--name regular">
                                     TCL 40S325 40 Inch 1080p Smart LED Roku TV
@@ -1009,38 +1035,41 @@
                     </div><!-- item end -->
                     <div class="splide__slide">
                         <div class="products-slider__item">
-                            <button class="products-slider__item--fav"><img src="img/svg/product-fav.svg" alt=""></button>
+                            <button class="products-slider__item--fav">
+                                <img src="{{ asset('assets/img/svg/product-fav.svg') }}" alt="">
+                            </button>
                             <!-- item slider -->
                             <div class="item-slider">
                                 <div class="splide__arrows item-slider__navs">
                                     <button class="splide__arrow splide__arrow--prev item-slider__navs--btn item-slider__navs--prev">
-                                        <img src="img/svg/item-prev.svg" alt="">
+                                        <img src="{{ asset('assets/img/svg/item-prev.svg') }}" alt="">
                                     </button>
                                     <button class="splide__arrow splide__arrow--next item-slider__navs--btn item-slider__navs--next">
-                                        <img src="img/svg/item-next.svg" alt="">
+                                        <img src="{{ asset('assets/img/svg/item-next.svg') }}" alt="">
                                     </button>
                                 </div>
                                 <div class="splide__track">
                                     <ul class="splide__list">
                                         <div class="splide__slide">
                                             <div class="item-slider__item">
-                                                <img src="img/watch.png" alt="">
+                                                <img src="{{ asset('assets/img/watch.png') }}" alt="">
                                             </div>
                                         </div>
                                         <div class="splide__slide">
                                             <div class="item-slider__item">
-                                                <img src="img/headphone.png" alt="">
+                                                <img src="{{ asset('assets/img/headphone.png') }}" alt="">
                                             </div>
                                         </div>
                                     </ul>
                                 </div>
                             </div><!-- item slide end -->
                             <div class="products-slider__item--footer d-flex flex-column align-items-start">
-                                <div class="products-slider__item--status regular">
+                                <div class="products-slider__item--status products-slider__item--status--green regular">
                                     NEW
                                 </div>
-                                <div class="products-slider__item--price bold">
+                                <div class="products-slider__item--price products-slider__item--price--red bold">
                                     ₾1,239.39
+                                    <span class="products-slider__item--price--old">₾1,239.39</span>
                                 </div>
                                 <a href="" class="products-slider__item--name regular">
                                     TCL 40S325 40 Inch 1080p Smart LED Roku TV
@@ -1058,38 +1087,40 @@
                     </div><!-- item end -->
                     <div class="splide__slide">
                         <div class="products-slider__item">
-                            <button class="products-slider__item--fav"><img src="img/svg/product-fav.svg" alt=""></button>
+                            <button class="products-slider__item--fav">
+                                <img src="{{ asset('assets/img/svg/product-fav.svg') }}" alt=""></button>
                             <!-- item slider -->
                             <div class="item-slider">
                                 <div class="splide__arrows item-slider__navs">
                                     <button class="splide__arrow splide__arrow--prev item-slider__navs--btn item-slider__navs--prev">
-                                        <img src="img/svg/item-prev.svg" alt="">
+                                        <img src="{{ asset('assets/img/svg/item-prev.svg') }}" alt="">
                                     </button>
                                     <button class="splide__arrow splide__arrow--next item-slider__navs--btn item-slider__navs--next">
-                                        <img src="img/svg/item-next.svg" alt="">
+                                        <img src="{{ asset('assets/img/svg/item-next.svg') }}" alt="">
                                     </button>
                                 </div>
                                 <div class="splide__track">
                                     <ul class="splide__list">
                                         <div class="splide__slide">
                                             <div class="item-slider__item">
-                                                <img src="img/watch.png" alt="">
+                                                <img src="{{ asset('assets/img/watch.png') }}" alt="">
                                             </div>
                                         </div>
                                         <div class="splide__slide">
                                             <div class="item-slider__item">
-                                                <img src="img/headphone.png" alt="">
+                                                <img src="{{ asset('assets/img/headphone.png') }}" alt="">
                                             </div>
                                         </div>
                                     </ul>
                                 </div>
                             </div><!-- item slide end -->
                             <div class="products-slider__item--footer d-flex flex-column align-items-start">
-                                <div class="products-slider__item--status regular">
+                                <div class="products-slider__item--status products-slider__item--status--green regular">
                                     NEW
                                 </div>
-                                <div class="products-slider__item--price bold">
+                                <div class="products-slider__item--price products-slider__item--price--red bold">
                                     ₾1,239.39
+                                    <span class="products-slider__item--price--old">₾1,239.39</span>
                                 </div>
                                 <a href="" class="products-slider__item--name regular">
                                     TCL 40S325 40 Inch 1080p Smart LED Roku TV
@@ -1111,10 +1142,12 @@
             <div class="row d-flex d-lg-none">
                 <div class="col-6">
                     <div class="products-slider__item">
-                        <button class="products-slider__item--fav"><img src="img/svg/product-fav.svg" alt=""></button>
+                        <button class="products-slider__item--fav">
+                            <img src="{{ asset('assets/img/svg/product-fav.svg') }}" alt="">
+                        </button>
                         <!-- item slider -->
                         <div class="item-slider__item">
-                            <img src="img/watch.png" alt="">
+                            <img src="{{ asset('assets/img/watch.png') }}" alt="">
                         </div>
                         <div class="products-slider__item--footer d-flex flex-column align-items-start">
                             <div class="products-slider__item--status regular">
@@ -1139,10 +1172,12 @@
                 </div>
                 <div class="col-6">
                     <div class="products-slider__item">
-                        <button class="products-slider__item--fav"><img src="img/svg/product-fav.svg" alt=""></button>
+                        <button class="products-slider__item--fav">
+                            <img src="{{ asset('assets/img/svg/product-fav.svg') }}" alt="">
+                        </button>
                         <!-- item slider -->
                         <div class="item-slider__item">
-                            <img src="img/watch.png" alt="">
+                            <img src="{{ asset('assets/img/watch.png') }}" alt="">
                         </div>
                         <div class="products-slider__item--footer d-flex flex-column align-items-start">
                             <div class="products-slider__item--status regular">
@@ -1167,10 +1202,12 @@
                 </div>
                 <div class="col-6">
                     <div class="products-slider__item">
-                        <button class="products-slider__item--fav"><img src="img/svg/product-fav.svg" alt=""></button>
+                        <button class="products-slider__item--fav">
+                            <img src="{{ asset('assets/img/svg/product-fav.svg') }}" alt="">
+                        </button>
                         <!-- item slider -->
                         <div class="item-slider__item">
-                            <img src="img/watch.png" alt="">
+                            <img src="{{ asset('assets/img/watch.png') }}" alt="">
                         </div>
                         <div class="products-slider__item--footer d-flex flex-column align-items-start">
                             <div class="products-slider__item--status regular">
@@ -1195,10 +1232,12 @@
                 </div>
                 <div class="col-6">
                     <div class="products-slider__item">
-                        <button class="products-slider__item--fav"><img src="img/svg/product-fav.svg" alt=""></button>
+                        <button class="products-slider__item--fav">
+                            <img src="{{ asset('assets/img/svg/product-fav.svg') }}" alt="">
+                        </button>
                         <!-- item slider -->
                         <div class="item-slider__item">
-                            <img src="img/watch.png" alt="">
+                            <img src="{{ asset('assets/img/watch.png') }}" alt="">
                         </div>
                         <div class="products-slider__item--footer d-flex flex-column align-items-start">
                             <div class="products-slider__item--status regular">
@@ -1233,10 +1272,10 @@
                     <div class="charity-slider">
                         <div class="splide__arrows charity-slider__navs d-none d-lg-flex">
                             <button class="splide__arrow splide__arrow--prev charity-slider__navs--btn charity-slider__navs--prev">
-                                <img src="img/svg/slider-prev.svg" alt="">
+                                <img src="{{ asset('assets/img/svg/slider-prev.svg') }}" alt="">
                             </button>
                             <button class="splide__arrow splide__arrow--next charity-slider__navs--btn charity-slider__navs--next">
-                                <img src="img/svg/slider-next.svg" alt="">
+                                <img src="{{ asset('assets/img/svg/slider-next.svg') }}" alt="">
                             </button>
                         </div>
                         <!-- slider -->
@@ -1245,7 +1284,7 @@
                                 <div class="splide__slide">
                                     <div class="social-program-slider__item">
                                         <figure class="social-program-slider__item--cover">
-                                            <img src="img/Product1.png" alt="">
+                                            <img src="{{ asset('assets/img/Product1.png') }}" alt="">
                                         </figure>
                                         <div class="social-program-slider__item--text">
                                             <h1 class="social-program-slider__item--title bold">Justice for Jake Blake</h1>
@@ -1256,7 +1295,7 @@
                                                 <ul class="d-flex align-items-center">
                                                     <li class="header__btns--item">
                                                         <a href="" class="header__btns--link d-flex align-items-center justify-content-center">
-                                                            <img src="img/svg/fav.svg" alt="">
+                                                            <img src="{{ asset('assets/img/svg/fav.svg') }}" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -1267,7 +1306,7 @@
                                 <div class="splide__slide">
                                     <div class="social-program-slider__item">
                                         <figure class="social-program-slider__item--cover">
-                                            <img src="img/Product1.png" alt="">
+                                            <img src="{{ asset('assets/img/Product1.png') }}" alt="">
                                         </figure>
                                         <div class="social-program-slider__item--text">
                                             <h1 class="social-program-slider__item--title bold">Justice for Jake Blake</h1>
@@ -1278,7 +1317,7 @@
                                                 <ul class="d-flex align-items-center">
                                                     <li class="header__btns--item">
                                                         <a href="" class="header__btns--link d-flex align-items-center justify-content-center">
-                                                            <img src="img/svg/fav.svg" alt="">
+                                                            <img src="{{ asset('assets/img/svg/fav.svg') }}" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -1289,7 +1328,7 @@
                                 <div class="splide__slide">
                                     <div class="social-program-slider__item">
                                         <figure class="social-program-slider__item--cover">
-                                            <img src="img/Product1.png" alt="">
+                                            <img src="{{ asset('assets/img/Product1.png') }}" alt="">
                                         </figure>
                                         <div class="social-program-slider__item--text">
                                             <h1 class="social-program-slider__item--title bold">Justice for Jake Blake</h1>
@@ -1300,7 +1339,7 @@
                                                 <ul class="d-flex align-items-center">
                                                     <li class="header__btns--item">
                                                         <a href="" class="header__btns--link d-flex align-items-center justify-content-center">
-                                                            <img src="img/svg/fav.svg" alt="">
+                                                            <img src="{{ asset('assets/img/svg/fav.svg') }}" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -1351,7 +1390,7 @@
                     <li class="d-flex">
                         <a href="" class="news__item d-flex">
                             <figure class="news__item--img">
-                                <img src="img/news.png" alt="">
+                                <img src="{{ asset('assets/img/news.png') }}" alt="">
                             </figure>
                             <div class="news__item--text">
                                 <h1 class="news__item--title bold">
@@ -1370,7 +1409,7 @@
                     <li class="d-flex">
                         <a href="" class="news__item d-flex">
                             <figure class="news__item--img">
-                                <img src="img/news.png" alt="">
+                                <img src="{{ asset('assets/img/news.png') }}" alt="">
                             </figure>
                             <div class="news__item--text">
                                 <h1 class="news__item--title bold">
@@ -1389,7 +1428,7 @@
                     <li class="d-flex">
                         <a href="" class="news__item d-flex">
                             <figure class="news__item--img">
-                                <img src="img/news.png" alt="">
+                                <img src="{{ asset('assets/img/news.png') }}" alt="">
                             </figure>
                             <div class="news__item--text">
                                 <h1 class="news__item--title bold">
@@ -1408,7 +1447,7 @@
                     <li class="d-flex">
                         <a href="" class="news__item d-flex">
                             <figure class="news__item--img">
-                                <img src="img/news.png" alt="">
+                                <img src="{{ asset('assets/img/news.png') }}" alt="">
                             </figure>
                             <div class="news__item--text">
                                 <h1 class="news__item--title bold">
@@ -1434,7 +1473,7 @@
                                 <div class="splide__slide">
                                     <a href="" class="news news__item d-flex flex-column">
                                         <figure class="news__item--img">
-                                            <img src="img/news.png" alt="">
+                                            <img src="{{ asset('assets/img/news.png') }}" alt="">
                                         </figure>
                                         <div class="news__item--text">
                                             <p class="news__item--date regular">
@@ -1453,7 +1492,7 @@
                                 <div class="splide__slide">
                                     <a href="" class="news news__item d-flex flex-column">
                                         <figure class="news__item--img">
-                                            <img src="img/news.png" alt="">
+                                            <img src="{{ asset('assets/img/news.png') }}" alt="">
                                         </figure>
                                         <div class="news__item--text">
                                             <p class="news__item--date regular">
@@ -1472,7 +1511,7 @@
                                 <div class="splide__slide">
                                     <a href="" class="news news__item d-flex flex-column">
                                         <figure class="news__item--img">
-                                            <img src="img/news.png" alt="">
+                                            <img src="{{ asset('assets/img/news.png') }}" alt="">
                                         </figure>
                                         <div class="news__item--text">
                                             <p class="news__item--date regular">
@@ -1506,28 +1545,28 @@
                 <ul class="ourshop d-none d-lg-flex flex-wrap">
                     <li class="ourshop__item">
                         <a href="" class="ourshop__item--link">
-                            <img src="img/alta.png" alt="" class="ourshop__item--img">
+                            <img src="{{ asset('assets/img/alta.png') }}" alt="" class="ourshop__item--img">
                         </a>
                     </li>
                     <li class="ourshop__item">
                         <a href="" class="ourshop__item--link">
-                            <img src="img/ee.png" alt="" class="ourshop__item--img">
+                            <img src="{{ asset('assets/img/ee.png') }}" alt="" class="ourshop__item--img">
                         </a>
                     </li>
                     <li class="ourshop__item">
                         <a href="" class="ourshop__item--link">
-                            <img src="img/zoomer.png" alt="" class="ourshop__item--img">
+                            <img src="{{ asset('assets/img/zoomer.png') }}" alt="" class="ourshop__item--img">
                         </a>
                     </li>
                     <li class="ourshop__item">
                         <a href="" class="ourshop__item--link">
-                            <img src="img/samsung.png" alt="" class="ourshop__item--img">
+                            <img src="{{ asset('assets/img/samsung.png') }}" alt="" class="ourshop__item--img">
                         </a>
                     </li>
 
                     <li class="ourshop__item">
                         <a href="" class="ourshop__item--link">
-                            <img src="img/alta.png" alt="" class="ourshop__item--img">
+                            <img src="{{ asset('assets/img/alta.png') }}" alt="" class="ourshop__item--img">
                         </a>
                     </li>
                 </ul>
@@ -1539,28 +1578,28 @@
                                 <div class="splide__slide">
                                     <li class="">
                                         <a href="" class="ourshop__item--link">
-                                            <img src="img/alta.png" alt="" class="ourshop__item--img">
+                                            <img src="{{ asset('assets/img/alta.png') }}" alt="" class="ourshop__item--img">
                                         </a>
                                     </li>
                                 </div><!-- item end -->
                                 <div class="splide__slide">
                                     <li class="">
                                         <a href="" class="ourshop__item--link">
-                                            <img src="img/alta.png" alt="" class="ourshop__item--img">
+                                            <img src="{{ asset('assets/img/alta.png') }}" alt="" class="ourshop__item--img">
                                         </a>
                                     </li>
                                 </div><!-- item end -->
                                 <div class="splide__slide">
                                     <li class="">
                                         <a href="" class="ourshop__item--link">
-                                            <img src="img/alta.png" alt="" class="ourshop__item--img">
+                                            <img src="{{ asset('assets/img/alta.png') }}" alt="" class="ourshop__item--img">
                                         </a>
                                     </li>
                                 </div><!-- item end -->
                                 <div class="splide__slide">
                                     <li class="">
                                         <a href="" class="ourshop__item--link">
-                                            <img src="img/alta.png" alt="" class="ourshop__item--img">
+                                            <img src="{{ asset('assets/img/alta.png') }}" alt="" class="ourshop__item--img">
                                         </a>
                                     </li>
                                 </div><!-- item end -->

@@ -1,8 +1,47 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+
 
 // Variables
-@import 'variables';
+// @import 'variables';
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+// @import '~bootstrap/scss/bootstrap';
+@import '../style/fonts.css';
+@import '../style/splide.min.css';
+
+@import '../style/grid.css';
+@import '../style/style.css';
+
+
+
+@import '../style/components/main';
+@import '../style/components/header';
+@import '../style/components/head-menu';
+@import '../style/components/slider';
+@import '../style/components/categories';
+@import '../style/components/banner';
+@import '../style/components/products';
+@import '../style/components/social-program';
+@import '../style/components/charity';
+@import '../style/components/news';
+@import '../style/components/ourshop';
+@import '../style/components/delivered';
+@import '../style/components/footer';
+@import '../style/components/mobile-bar';
+@import '../style/components/popup';
+@import '../style/components/sign-in';
+@import '../style/components/profile';
+@import '../style/components/filter';
+@import '../style/components/formelements';
+@import '../style/components/cart';
+@import '../style/components/about';
+@import '../style/components/contact';
+@import '../style/components/details';
+@import '../style/components/organization';
+@import '../style/components/page';
+@import '../style/components/user';
+@import '../style/components/upload';
+
+
+
