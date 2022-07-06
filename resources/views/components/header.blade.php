@@ -34,7 +34,7 @@
             <div class="container">
                 <ul class="m-header__menu d-flex justify-content-between">
                     <li class="m-header__menu--li">
-                        <a href="/?act=home" class="m-header__menu--a regular d-flex flex-column align-items-center">
+                        <a href="{{ route('index') }}" class="m-header__menu--a regular d-flex flex-column align-items-center">
                             <figure class="m-header__menu--figure d-flex justify-content-center">
                                 <div class="m-header__menu--icon">
                                     <img src="{{ asset('assets/img/svg/menu/home1.svg') }}" class="convert-svg" alt="">
@@ -44,7 +44,7 @@
                         </a>
                     </li>
                     <li class="m-header__menu--li">
-                        <a href="/?act=market" class="m-header__menu--a active regular d-flex flex-column align-items-center">
+                        <a href="{{ route('pages.market') }}" class="m-header__menu--a active regular d-flex flex-column align-items-center">
                             <figure class="m-header__menu--figure d-flex justify-content-center">
                                 <div class="m-header__menu--icon">
                                     <img src="{{ asset('assets/img/svg/menu/market1.svg') }}" class="convert-svg" alt="">
@@ -56,7 +56,7 @@
                         </a>
                     </li>
                     <li class="m-header__menu--li">
-                        <a href="/?act=shop" class="m-header__menu--a regular d-flex flex-column align-items-center">
+                        <a href="{{ route('pages.shop') }}" class="m-header__menu--a regular d-flex flex-column align-items-center">
                             <figure class="m-header__menu--figure d-flex justify-content-center">
                                 <div class="m-header__menu--icon">
                                     <img src="{{ asset('assets/img/svg/menu/shop1.svg') }}" class="convert-svg" alt="">
@@ -68,7 +68,7 @@
                         </a>
                     </li>
                     <li class="m-header__menu--li">
-                        <a href="/?act=social_program" class="m-header__menu--a regular d-flex flex-column align-items-center">
+                        <a href="{{ route('pages.social') }}" class="m-header__menu--a regular d-flex flex-column align-items-center">
                             <figure class="m-header__menu--figure d-flex justify-content-center">
                                 <div class="m-header__menu--icon">
                                     <img src="{{ asset('assets/img/svg/menu/social1.svg') }}" class="convert-svg" alt="">
@@ -80,7 +80,7 @@
                         </a>
                     </li>
                     <li class="m-header__menu--li">
-                        <a href="/?act=charities" class="m-header__menu--a regular d-flex flex-column align-items-center">
+                        <a href="{{ route('pages.charities') }}" class="m-header__menu--a regular d-flex flex-column align-items-center">
                             <figure class="m-header__menu--figure d-flex justify-content-center">
                                 <div class="m-header__menu--icon">
                                     <img src="{{ asset('assets/img/svg/menu/charitys1.svg') }}" class="convert-svg" alt="">
@@ -433,37 +433,37 @@
             <div class="head-menu d-flex justify-content-between align-items-center">
                 <ul class="head-menu__categories d-flex">
                     <li class="head-menu__categories--item">
-                        <a href="?act=home" class="head-menu__categories--link regular  d-flex align-items-center">
+                        <a href="{{ route('index') }}" class="head-menu__categories--link regular  d-flex align-items-center">
                             <img src="{{ asset('assets/img/svg/menu/home.svg') }}" alt="" class="head-menu__categories--icon convert-svg">
                             Home
                         </a>
                     </li>
                     <li class="head-menu__categories--item">
-                        <a href="?act=market" class="head-menu__categories--link active regular  d-flex align-items-center">
+                        <a href="{{ route('pages.market') }}" class="head-menu__categories--link active regular  d-flex align-items-center">
                             <img src="{{ asset('assets/img/svg/menu/market.svg') }}" alt="" class="head-menu__categories--icon convert-svg">
                         Market
                     </a>
                     </li>
                     <li class="head-menu__categories--item">
-                        <a href="?act=shop" class="head-menu__categories--link regular  d-flex align-items-center">
+                        <a href="{{ route('pages.shop') }}" class="head-menu__categories--link regular  d-flex align-items-center">
                             <img src="{{ asset('assets/img/svg/menu/shop.svg') }}" alt="" class="head-menu__categories--icon convert-svg">
                             Shop
                         </a>
                     </li>
                     <li class="head-menu__categories--item">
-                        <a href="?act=charities" class="head-menu__categories--link regular  d-flex align-items-center">
+                        <a href="{{ route('pages.charities') }}" class="head-menu__categories--link regular  d-flex align-items-center">
                             <img src="{{ asset('assets/img/svg/menu/charitys.svg') }}" alt="" class="head-menu__categories--icon convert-svg">
                             Charitys And Other NPOs
                         </a>
                     </li>
                     <li class="head-menu__categories--item">
-                        <a href="?act=social-program" class="head-menu__categories--link regular  d-flex align-items-center">
+                        <a href="{{ route('pages.social') }}" class="head-menu__categories--link regular  d-flex align-items-center">
                             <img src="{{ asset('assets/img/svg/menu/social.svg') }}" alt="" class="head-menu__categories--icon convert-svg">
                             Social Programs
                         </a>
                     </li>
                     <li class="head-menu__categories--item">
-                        <a href="?act=news" class="head-menu__categories--link regular  d-flex align-items-center">
+                        <a href="{{ route('pages.news') }}" class="head-menu__categories--link regular  d-flex align-items-center">
                             <img src="{{ asset('assets/img/svg/menu/news.svg') }}" alt="" class="head-menu__categories--icon convert-svg convert-svg">
                             News
                         </a>
@@ -471,7 +471,7 @@
                 </ul>
                 <ul class="head-menu__categories d-flex">
                     <li class="head-menu__categories--item">
-                        <a href="?act=about" class="head-menu__categories--link regular">About us</a>
+                        <a href="{{ route('pages.about') }}" class="head-menu__categories--link regular">About us</a>
                     </li>
                     <li class="head-menu__categories--item">
                         <a href="?act=contact" class="head-menu__categories--link regular">Help&Contact</a>

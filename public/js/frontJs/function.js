@@ -101,7 +101,7 @@ CloseBgActiveWindow && CloseBgActiveWindow.forEach(function(e) {
 
 const convertImages = (query, callback) => {
     const images = document.querySelectorAll(query);
-  
+//    console.log(images);
     images.forEach(image => {
       fetch(image.src)
       .then(res => res.text())
@@ -111,7 +111,7 @@ const convertImages = (query, callback) => {
   
         if (image.id) svg.id = image.id;
         if (image.className) svg.classList = image.classList;
-  
+       //     console.log(image.parentNode, svg, image);
         image.parentNode.replaceChild(svg, image);
       })
       .then(callback)

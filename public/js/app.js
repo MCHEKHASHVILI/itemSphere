@@ -102,6 +102,7 @@ CloseBgActiveWindow && CloseBgActiveWindow.forEach(function (e) {
 
 var convertImages = function convertImages(query, callback) {
   var images = document.querySelectorAll(query);
+  console.log(images);
   images.forEach(function (image) {
     fetch(image.src).then(function (res) {
       return res.text();
