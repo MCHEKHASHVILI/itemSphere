@@ -16,8 +16,8 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    @include('components.header') 
+    @include('components.main.header') 
     @yield('content')
-    @include('components.footer')
+    @include('components.main.footer')
 </body>
 </html>

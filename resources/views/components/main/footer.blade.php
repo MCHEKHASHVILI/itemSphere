@@ -20,19 +20,19 @@
                                         <h2 class="footer__title d-none d-lg-block regular">TERMS</h2>
                                         <ul class="footer__menu">
                                             <li class="footer__menu--item d-flex">
-                                                <a href="" class="footer__menu--link regular">Home</a>
+                                                <a href="{{ route('index') }}" class="footer__menu--link regular">Home</a>
                                             </li>
                                             <li class="footer__menu--item d-flex">
-                                                <a href="" class="footer__menu--link regular">Market</a>
+                                                <a href="{{ route('pages.market') }}" class="footer__menu--link regular">Market</a>
                                             </li>
                                             <li class="footer__menu--item d-flex">
-                                                <a href="" class="footer__menu--link regular">Shop</a>
+                                                <a href="{{ route('pages.shop') }}" class="footer__menu--link regular">Shop</a>
                                             </li>
                                             <li class="footer__menu--item d-flex">
-                                                <a href="" class="footer__menu--link regular">Charity</a>
+                                                <a href="{{ route('pages.charities') }}" class="footer__menu--link regular">Charity</a>
                                             </li>
                                             <li class="footer__menu--item d-flex">
-                                                <a href="" class="footer__menu--link regular">About us</a>
+                                                <a href="{{ route('pages.about') }}" class="footer__menu--link regular">About us</a>
                                             </li>
                                         </ul>
                                     </div>
