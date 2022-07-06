@@ -1,4 +1,5 @@
 <div class="col-10 d-none d-lg-flex justify-content-between align-items-center">
+    
     <form class="header__search d-flex align-items-center justify-content-between">
         <input type="text" placeholder="search" class="header__search--input regular">
         <button class="header__search--btn">
